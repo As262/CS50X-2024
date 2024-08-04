@@ -1,0 +1,15 @@
+ENERGY
+Average energy of music is 8.659
+VALENCE
+Average valence of music is 0.484
+DANCEABILITY
+0.716
+
+Conlusion:
+The valence of music that the user was average. showing that the user listens to both happy and sad music. Hence, i would conclude the user
+is from the Blue mood group. This person seeks out music to feel their feelings out loud.
+
+Hypothesize about why the way you've calculated this aura might not be very representative of the listener .what better ways of calculating this aura
+would you propose?
+
+the data from his top 100 songs, might not give accurate information of the user, we might need to have more data from what the user is listening to.
