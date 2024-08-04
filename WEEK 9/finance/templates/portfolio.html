@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link href="/static/styles.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Your Portfolio</h1>
+
+    <table>
+        <tr>
+            <th>Symbol</th>
+            <th>Name</th>
+            <th>Shares</th>
+            <th>Price</th>
+            <th>Total</th>
+        </tr>
+        {% for stock in stocks %}
+        <tr>
+            <td>{{ stock.symbol }}</td>
+            <td>{{ stock.name }}</td>
+            <td>{{ stock.shares }}</td>
+            <td>{{ stock.price }}</td>
+            <td>{{ stock.total }}</td>
+        </tr>
+        {% endfor %}
+        <tr>
+            <th colspan="4">Total Cash</th>
+            <th>{{ cash }}</th>
+        </tr>
+    </table>
+
+    <div>
+        <a href="/buy">Buy More Stocks</a>
+        <a href="/sell">Sell Stocks</a>
+        <a href="/history">View Transaction History</a>
+    </div>
+</body>
+</html>
